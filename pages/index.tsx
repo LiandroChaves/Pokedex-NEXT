@@ -117,7 +117,13 @@ export default function Home() {
               Expereiência base: {dadosNome.base_experience}
             </li>
             <li className="">
-              <img src={dadosNome.sprites.other["official-artwork"].front_default} alt={dadosNome.name} className='relative mt-[-232%] right-[190px]' width={190}/>
+            <Image 
+                src={pokedex} 
+                alt='pokedex' 
+                className='flex justify-center self-center bg-cover' 
+                width={850}
+                priority // Adiciona a prioridade de carregamento
+              />
             </li> 
           </ul>
           ) : dados ? (
